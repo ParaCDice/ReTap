@@ -1,4 +1,4 @@
-package edu.neumont.csc280;
+package edu.neumont.rawMilkClub;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

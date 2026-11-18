@@ -1,4 +1,4 @@
-package edu.neumont.csc280.controller;
+package edu.neumont.rawMilkClub.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;

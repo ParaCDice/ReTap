@@ -1,8 +1,8 @@
-package edu.neumont.csc280.controller;
+package edu.neumont.rawMilkClub.controller;
 
-import edu.neumont.csc280.data.DiaryEntryRepository;
-import edu.neumont.csc280.data.MoodRepository;
-import edu.neumont.csc280.model.Mood;
+import edu.neumont.rawMilkClub.data.DiaryEntryRepository;
+import edu.neumont.rawMilkClub.data.MoodRepository;
+import edu.neumont.rawMilkClub.model.Mood;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
