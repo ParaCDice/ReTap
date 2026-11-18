@@ -5,15 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ReTap - Login</title>
         <link rel="stylesheet" href="/css/style.css">
+        <script src="/js/auth.js" defer></script>
+
     </head>
 
     <body>
+        <div class="site-ticker">
+            <marquee scrollamount="5">
+                *** HELLO CHUDS ***
+            </marquee>
+        </div>
         <div class="container">
-
+            
             <header>
                 <h1>ReTap</h1>
                 <h3>Player Login</h3>
-                <marquee>welcome back, planeswalker</marquee>
             </header>
 
             <main>
@@ -37,7 +43,7 @@
                     <section class="form-box">
                         <h2>REGISTER</h2>
 
-                        <form id="register-form">
+                        <form id="login-form">
                             <label for="register-username">Username:</label>
                             <input type="text" id="register-username" name="username" autocomplete="username" required>
 
@@ -57,7 +63,7 @@
                     </section>
                 </div>
 
-                <p><a href="/">RETURN TO MAIN PAGE</a></p>
+                <p class="link"><a  href="/">RETURN TO MAIN PAGE</a></p>
             </main>
             <footer>
                 <p>ReTap</p>
