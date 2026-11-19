@@ -1,8 +1,7 @@
-package edu.neumont.rawMilkClub.controller;
+package edu.neumont.rawmilkclub.controller;
 
-import edu.neumont.rawMilkClub.data.DiaryEntryRepository;
-import edu.neumont.rawMilkClub.data.MoodRepository;
-import edu.neumont.rawMilkClub.model.Mood;
+import edu.neumont.rawmilkclub.data.MoodRepository;
+import edu.neumont.rawmilkclub.model.Mood;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -35,11 +34,9 @@ import java.util.Map;
 public class MoodController {
 
     private final MoodRepository moods;
-    private final DiaryEntryRepository entries;
 
-    public MoodController(MoodRepository moods, DiaryEntryRepository entries) {
+    public MoodController(MoodRepository moods) {
         this.moods = moods;
-        this.entries = entries;
     }
 
     public record MoodRequest(
@@ -74,13 +71,6 @@ public class MoodController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<?> delete(@PathVariable int id) {
-        // Don't leave entries pointing at a mood that's gone: 409 Conflict instead
-        long inUse = entries.countByMoodId(id);
-        if (inUse > 0) {
-            return ResponseEntity.status(HttpStatus.CONFLICT)
-                    .body(Map.of("error", inUse == 1 ? "1 entry still uses this mood"
-                                                     : inUse + " entries still use this mood"));
-        }
         if (!moods.existsById(id)) {
             return ResponseEntity.notFound().build();
         }

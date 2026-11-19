@@ -1,4 +1,4 @@
-package edu.neumont.csc280;
+package edu.neumont.rawmilkclub;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

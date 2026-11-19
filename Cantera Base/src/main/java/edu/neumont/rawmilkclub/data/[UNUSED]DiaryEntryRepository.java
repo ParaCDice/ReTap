@@ -1,6 +1,6 @@
-package edu.neumont.rawMilkClub.data;
+package edu.neumont.rawmilkclub.data;
 
-import edu.neumont.rawMilkClub.model.DiaryEntry;
+import edu.neumont.rawmilkclub.model.DiaryEntry;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

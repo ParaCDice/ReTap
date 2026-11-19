@@ -11,7 +11,7 @@
 		<relativePath/>
 	</parent>
 
-	<groupId>edu.neumont.csc280</groupId>
+	<groupId>edu.neumont.rawmilkclub</groupId>
 	<artifactId>diary-jpa</artifactId>
 	<version>1.0</version>
 	<name>diary-jpa</name>

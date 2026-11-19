@@ -1,6 +1,6 @@
-package edu.neumont.rawMilkClub.data;
+package edu.neumont.rawmilkclub.data;
 
-import edu.neumont.rawMilkClub.model.Mood;
+import edu.neumont.rawmilkclub.model.Mood;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package edu.neumont.rawMilkClub.model;
+package edu.neumont.rawmilkclub.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
