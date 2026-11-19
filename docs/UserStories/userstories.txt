@@ -1,0 +1,42 @@
+As a visitor, I want to view a landing page explaining ReTap so that I can understand its purpose and access the login or registration page.
+
+acceptance: 
+
+The landing page loads and displays a description of our app.
+
+A login/register button navigates to the authentication page.
+
+The website displays correctly.
+
+
+
+As a user, I want to access a login page and navigate to my home page so that I can explore the website before account functionality is implemented.
+
+acceptance: 
+
+The login page displays fields for email and password.
+
+The registration form includes username, email, and password fields.
+
+Users can access the home page through a temporary demo login without database authentication.
+
+the home page displays a create Room button.
+
+
+As a user, I want to create a play-holder room that showcases a single M:tg card so I can see where the project is going in the future 
+
+acceptance: 
+
+Clicking create room opens a placeholder sandbox room.
+
+The room displays at least one MTG card.
+
+The card image loads and is visible within the room.
+
+As a developer, I want database functionality as well as a copy of the repository on the server
+
+acceptance:
+
+The ability to log into the server and work in the database as well as a copy of the repo saved locally as well as easily updatable.
+
+No card interaction, multiplayer support, or game rules are required for Demo 1. 😏
